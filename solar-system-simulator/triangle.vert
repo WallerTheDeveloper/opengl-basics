@@ -12,6 +12,6 @@ uniform mat4 projection;
 void main()
 {
     // note that we read the multiplication from right to left
-    gl_Position = projection * view * model * vec4(aPos.x, -    aPos.y, aPos.z, 1.0);
+    gl_Position = projection * view * model * vec4(aPos.x, -aPos.y, aPos.z, 1.0);
     TexCoord = vec2(aTexCoord.x, aTexCoord.y);
 } 
